@@ -23,7 +23,7 @@ range_end = datetime.strftime(daysago_date,'%b %d %H:%M:%S %z %Y')
 username=""
 helptext = """
     Usage: yeetmytweet.py <-u someusername> <-i/-a>
-           yeetmytweet.py <--username someusername> <--interactive/--auto> 
+           yeetmytweet.py <--username=someusername> <--interactive/--auto> 
     Options:
         Note that order is important, username option MUST be first.
         -u (--username)    : Username         : (Followed by the username you are operating on)
@@ -75,10 +75,6 @@ def main(argv):
                 print("\nOperation Cancelled by user before beginning.")
                 sys.exit()
             print("Starting automatic delete.")
-        else:
-            print("Invalid options. Exiting")
-            sys.exit(6)
-
-        
+ 
 if __name__ == "__main__":
    main(sys.argv[1:])
