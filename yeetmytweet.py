@@ -75,6 +75,9 @@ def main(argv):
                 print("\nOperation Cancelled by user before beginning.")
                 sys.exit()
             print("Starting automatic delete.")
+        else:
+            print("Invalid options. Exiting")
+            sys.exit(6)
 
         
 if __name__ == "__main__":
